@@ -12,7 +12,7 @@ Zero dependencies • Pure Kotlin • Material Design ready
 
 ## Preview
 
-<img src="app/src/main/assets/Video.gif"
+<img src="quick_contacts_picker/src/main/assets/Video.gif"
        alt="Contacts Picker Library Demo" 
       height="320"/>
 
