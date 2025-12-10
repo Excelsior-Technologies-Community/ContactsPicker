@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Custom attributes for ContactsPickerView -->
+    <declare-styleable name="ContactsPickerView">
+
+        <!-- Show/hide search bar -->
+        <attr name="showSearchBar" format="boolean" />
+
+        <!-- Show/hide alphabet scroller -->
+        <attr name="showAlphabetScroller" format="boolean" />
+
+        <!-- Search hint text -->
+        <attr name="searchHint" format="string" />
+
+        <!-- Empty state message -->
+        <attr name="emptyMessage" format="string" />
+
+        <!-- Auto load contacts on view creation -->
+        <attr name="autoLoadContacts" format="boolean" />
+
+        <!-- Search bar styling -->
+        <attr name="searchBarBackground" format="reference|color" />
+        <attr name="searchTextColor" format="color" />
+        <attr name="searchTextSize" format="dimension" />
+
+        <!-- Contact name styling -->
+        <attr name="contactNameTextColor" format="color" />
+        <attr name="contactNameTextSize" format="dimension" />
+
+        <!-- Contact phone styling -->
+        <attr name="contactPhoneTextColor" format="color" />
+        <attr name="contactPhoneTextSize" format="dimension" />
+
+        <!-- Section header styling -->
+        <attr name="sectionHeaderBackground" format="reference|color" />
+        <attr name="sectionHeaderTextColor" format="color" />
+        <attr name="sectionHeaderTextSize" format="dimension" />
+
+        <!-- Contact item background -->
+        <attr name="itemBackground" format="reference" />
+
+    </declare-styleable>
+
+    <!-- Custom attributes for AlphabetScrollerView -->
+    <declare-styleable name="AlphabetScrollerView">
+
+        <!-- Text color for scroller letters -->
+        <attr name="scrollerTextColor" format="color" />
+
+        <!-- Text color for selected/highlighted letter -->
+        <attr name="scrollerSelectedTextColor" format="color" />
+
+        <!-- Text size for scroller letters -->
+        <attr name="scrollerTextSize" format="dimension" />
+
+        <!-- Background color for highlighted letter -->
+        <attr name="scrollerHighlightBackground" format="color" />
+
+    </declare-styleable>
+
+</resources>

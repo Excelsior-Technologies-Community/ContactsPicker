@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark_color">#1976D2</color>
+    <color name="primary_light_color">#BBDEFB</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_color">#FF5722</color>
+
+    <!-- Background Colors -->
+    <color name="section_header_background">#F5F5F5</color>
+    <color name="search_background">#FAFAFA</color>
+
+    <!-- Text Colors -->
+    <color name="section_header_text">#616161</color>
+    <color name="contact_name_text">#212121</color>
+    <color name="contact_phone_text">#757575</color>
+
+    <!-- Divider and Border Colors -->
+    <color name="divider_color">#E0E0E0</color>
+
+    <!-- State Colors -->
+    <color name="selected_background">#E3F2FD</color>
+    <color name="ripple_color">#BDBDBD</color>
+
+</resources>

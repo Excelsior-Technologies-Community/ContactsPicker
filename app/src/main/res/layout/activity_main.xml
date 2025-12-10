@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Contacts Picker View with all custom attributes -->
+    <com.ext.quick_contacts_picker.ContactsPickerView
+        android:id="@+id/contactsPickerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:autoLoadContacts="true"
+        app:contactNameTextColor="#212121"
+        app:contactNameTextSize="16sp"
+        app:contactPhoneTextColor="#757575"
+        app:contactPhoneTextSize="14sp"
+        app:emptyMessage="No contacts available"
+        app:itemBackground="@drawable/contact_item_selector"
+        app:searchBarBackground="@drawable/search_background"
+        app:searchHint="Search contacts"
+        app:searchTextColor="#212121"
+        app:searchTextSize="16sp"
+        app:sectionHeaderBackground="@color/section_header_background"
+        app:sectionHeaderTextColor="#616161"
+        app:sectionHeaderTextSize="14sp"
+        app:showAlphabetScroller="true"
+        app:showSearchBar="true" />
+
+</LinearLayout>
