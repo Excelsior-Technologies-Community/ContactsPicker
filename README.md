@@ -3,6 +3,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![API](https://img.shields.io/badge/API-21%2B-orange.svg)](#)
+[![](https://jitpack.io/v/Excelsior-Technologies-Community/ContactsPicker.svg)](https://jitpack.io/#Excelsior-Technologies-Community/ContactsPicker)
 
 **Contacts Picker** is a modern, lightweight, and highly customizable **Android Contacts Picker** with built-in search, alphabet fast-scroll, big letter popup, and smooth section headers — just like WhatsApp, Google Contacts, and Telegram.
 
@@ -49,7 +50,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-    implementation 'com.github.YourUsername:AlphaPick:1.0.0'
+   implementation 'com.github.Excelsior-Technologies-Community:ContactsPicker:1.0.0'
 }
 ```
 
