@@ -1,7 +1,8 @@
-[![Kotlin](https://img.shields.io/badge/Kotlin-100%25-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+# Contacts Picker Library for Android
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blue?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![API](https://img.shields.io/badge/API-21%2B-orange.svg)](#)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](#)
 
 **Contacts Picker** is a modern, lightweight, and highly customizable **Android Contacts Picker** with built-in search, alphabet fast-scroll, big letter popup, and smooth section headers — just like WhatsApp, Google Contacts, and Telegram.
 
@@ -11,7 +12,9 @@ Zero dependencies • Pure Kotlin • Material Design ready
 
 ## Preview
 
-
+<img src="app/src/main/assets/Video.gif"
+       alt="Contacts Picker Library Demo" 
+      height="320"/>
 
 ---
 
@@ -156,6 +159,14 @@ contactsPickerView.setOnContactClickListener { contact -> ... }
 
 ---
 
+## Requirements
+
+- Android API 21+ (Lollipop)
+- Kotlin
+- AndroidX
+
+---
+
 ## 📄 License
  
 ```
@@ -183,3 +194,4 @@ SOFTWARE.
 ```
  
 ---
+
