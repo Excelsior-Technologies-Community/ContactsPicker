@@ -53,9 +53,6 @@ dependencies {
    implementation 'com.github.Excelsior-Technologies-Community:ContactsPicker:1.0.0'
 }
 ```
-
-> Replace `YourUsername` with your actual GitHub username
-
 ---
 
 ## Usage
