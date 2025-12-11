@@ -51,6 +51,7 @@ dependencyResolutionManagement {
 ```gradle
 dependencies {
    implementation 'com.github.Excelsior-Technologies-Community:ContactsPicker:1.0.0'
+   implementation 'com.github.bumptech.glide:glide:4.16.0'  // Required for thumbnail loading
 }
 ```
 ---
