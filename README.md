@@ -85,13 +85,20 @@ dependencies {
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var contactsPickerView: ContactsPickerView
+
+    companion object {
+        private const val PERMISSION_REQUEST_CODE = 100
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val contactsPicker = findViewById<ContactsPickerView>(R.id.contactsPickerView)
+        contactsPickerView = findViewById(R.id.contactsPickerView)
 
-        contactsPicker.setOnContactClickListener { contact ->
+        // Set contact click listener
+        contactsPickerView.setOnContactClickListener { contact ->
             Toast.makeText(
                 this,
                 "Selected: ${contact.name}\n${contact.phoneNumber}",
@@ -99,8 +106,48 @@ class MainActivity : AppCompatActivity() {
             ).show()
         }
 
-        // Manually reload (e.g., after permission granted)
-        // contactsPicker.reloadContacts()
+        // Check and request permission
+        if (!checkContactsPermission()) {
+            requestContactsPermission()
+        } else {
+            contactsPickerView.reloadContacts()
+        }
+    }
+
+    private fun checkContactsPermission(): Boolean {
+        return ContextCompat.checkSelfPermission(
+            this,
+            Manifest.permission.READ_CONTACTS
+        ) == PackageManager.PERMISSION_GRANTED
+    }
+
+    private fun requestContactsPermission() {
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(Manifest.permission.READ_CONTACTS),
+            PERMISSION_REQUEST_CODE
+        )
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, reload contacts
+                contactsPickerView.reloadContacts()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Permission denied. Cannot load contacts.",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
     }
 }
 ```
